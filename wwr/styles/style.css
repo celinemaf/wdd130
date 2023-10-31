@@ -8,7 +8,7 @@ h1, h2, h3, h4,h5, h6 {
 
 }
 #content{
-    max-width: 960px;
+    max-width: 1600px;
     margin: 0 auto;
 }
     
@@ -60,6 +60,27 @@ nav a:hover {
     color: #d9c2a3
 
 }
+.rivers-card{
+    text-align: center;
+    display: center;
+    margin: auto;
+    align-items: center;
+    
+}
+.rapids-card{
+    text-align: center;
+    display: center;
+    margin: auto;
+    align-items: center;
+ 
+}
+.camping-card{
+    text-align: center;
+    display: center;
+    margin: auto;
+    align-items: center;
+ 
+}
 
 .nav a{
     text-align: center;
@@ -68,10 +89,7 @@ nav a:hover {
 }
 
 .card-img{
-    text-align: center;
-    display: flex;
-    margin: auto;
-    align-items: center;
+    text-align: center
     
 }
 .home-grid{
