@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+
+
+
 #background {
     height: 725px;
     background-color: white;
@@ -5,6 +9,7 @@
 }
 h1, h2, h3, h4,h5, h6 {
     color: black;
+    font-family: roboto;
 
 }
 #content{
@@ -14,6 +19,17 @@ h1, h2, h3, h4,h5, h6 {
     
 .nav a{
     text-align: center;
+    margin:  3;
+    width: fit contant;
+    background-color: #F5DBCB;
+    text-decoration: none;
+    padding: 35px;
+    border-radius: 10px;
+    color: black;
+    transition: transform .2s;
+    
+
+
 }
 
 #hero-msg h1, #hero-msg h4{
@@ -28,36 +44,52 @@ h1, h2, h3, h4,h5, h6 {
     text-align: center;
 }
    
-
 body {
-    background-color: #fcfbfb; 
-}
+        background-color: #fcfbfb;
+        font-family: Raleway, Arial, sans-serif;
+        font-size: 22px;
+        margin: 0;
+        padding: 0;
+    }
+h2 {
+        margin: 0;
+    }
+    
+
 header {
     background-color:rgba(20,30,13, .7);
 }
 nav a:hover {
     background-color: black;
     color: #d9c2a3;
-
+    transform: scale(1.1);
 }
+
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 #hero-img{
     width: 100%;
 }
 .logo{
     width: 80px;
+    padding-top:5px;
+
 }
 .msg{
     text-align: center;
     background-color:rgba(20,30,13, .7);
     color: black;
+    line-height: 1.5em;
+    padding: 35px;
 
 }
 .social{
     background-color:rgba(20,30,13, .7);
-    color: #d9c2a3
+    color: #d9c2a3;
+    padding-top: 15px;
+
 
 }
 .rivers-card{
@@ -86,10 +118,12 @@ nav a:hover {
     text-align: center;
     color: #fcfbfb;
     text-decoration: none;
+    padding:35px;
 }
 
 .card-img{
-    text-align: center
+    text-align: center;
+    border: 10px solid #d9c2a3;
     
 }
 .home-grid{
@@ -106,10 +140,27 @@ footer p a:hover {
 
 footer{
     background-color:rgba(20,30,13, .7);
+}   padding: 25px;
+
+.home-title {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
 }
 
+.book, .join {
+    background-color: #d9c2a3;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
 
-   
+main section img {
+    box-sizing: border-box;
+    
+}
 
 
 
