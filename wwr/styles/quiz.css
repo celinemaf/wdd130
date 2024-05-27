@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Lato;
+}
+
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    align-items: normal;
+}
+
+nav {
+    background-color: steelblue;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+nav a {
+    color: #fff;
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.checkmark {
+    background-color: #fff;
+    color: #fff;
+    padding: 4px 7px;
+    font-size: small;
+    position: relative;
+    bottom: 6px;
+}
+
+h1 {
+    color: #051089;
+    padding: 18px;
+    margin-bottom: 4px;
+    margin-left: 130px;
+    text-align: start;
+}
+
+main {
+    margin: 1rem;
+    grid-column: 1/2;
+}
+
+.quiz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 24px;
+    line-height: 2rem;
+    background-color: whitesmoke;
+    border: 1px solid #c55050;
+    border-radius: 16px;
+}
+
+.quiz label,
+input,
+textarea,
+select {
+    padding: 6px;
+    width: 90%;
+}
+
+.quiz label::first-letter,
+.quiz label:nth-child(2) {
+    font-weight: bolder;
+    color: #051089;
+}
+
+.code {
+    background-color: burlywood;
+    color: #312f2f;
+    font-size: small;
+    padding: 8px;
+    width: 65%;
+}
+
+.quiz button {
+    background-color: #000080;
+    color: #1e66ee;
+    padding: 14px 22px;
+    border: none;
+    border-radius: 8px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+footer {
+    margin-top: 1em;
+    border-top: 1px solid #000;
+    text-align: center;
+}
