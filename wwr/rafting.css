@@ -6,8 +6,8 @@
     --accent1-color: #605e51;
     --accent2-color: #35332b;
     
-    --heading-font: Lato, display;
-    --paragraph-font: Poppins, Nunito;
+    --heading-font: Poppins, Nunito;display;
+    --paragraph-font: Lato;
 
 
     --nav-background-color: #35332b ;
@@ -45,10 +45,15 @@ body{
 .hero {
     position: relative
 }
+h5{
+    font-family: var(--heading-font);
+    color: black;
+}
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4,h6 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
+
 }
 
 h2 {
