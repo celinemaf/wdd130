@@ -1,21 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 :root {
-    --primary-color: #bd7014;
-    --secondary-color: #414e54;
-    --accent1-color: #605e51;
-    --accent2-color: #35332b;
+    --primary-color: #db2fbf;
+    --secondary-color: black;
+    --accent1-color: #4822ee;
+    --accent2-color: #f0d878;
     
     --heading-font: Poppins, display;
     --paragraph-font: Lato,Roboto;
 
 
-    --nav-background-color: #35332b ;
+    --nav-background-color: hwb(0 7% 90%);
     --nav-link-color: #D5CE92;
     --nav-hover-link-color: #35332b;
-    --nav-hover-background-color: #bd7014 ;
+    --nav-hover-background-color: #996f6ff1 ;
 }
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 header {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -39,25 +43,18 @@ header nav {
 }
 
 body{
-    width: 1000px;
+    font-family: var(--paragraph-font);
+    padding: 20px;
 }
 
 .hero {
     position: relative
 }
-h5{
-    font-family: var(--heading-font);
-    color: black;
-}
 
-h1, h2, h3, h4,h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
 
-}
-
-h2 {
-    font-size: 30px;
 }
 
 .hero h1 {
@@ -74,7 +71,7 @@ h2 {
 }
 
 .hero img{
-    display: block;
+    display: flex;
     width: 100%;
     height: auto;
 }
@@ -93,7 +90,6 @@ h2 {
     color: var(--accent1-color);
     text-align: center;    
 }
-
 
 .hero article img {
     width: 165px;
@@ -166,9 +162,15 @@ footer  {
     align-items: center;
     background-color: var(--nav-background-color);
 }
+footer a {
+    text-decoration: none !important;
+    color: var(--nav-link-color);
+  }
+  
 
 footer p {
     flex: 1;
+    margin: 0;
     justify-content: center;
     color: #D5CE92;
     text-indent: 10px;
@@ -290,7 +292,7 @@ nav a {
     padding: 8px;
   }
   
-  /*ADVENTURES SECCTION*/
+  /*ADVENTURES SECTION*/
   .adventures {
     display: flex;
     flex-wrap: wrap;
@@ -398,79 +400,106 @@ nav a {
   }
   
   .newsletterbutton {
-    background-color: var(--accent2-color) !important;
+    background-color: var(--accent2-color);
   }
 
-  /*CONTACT US PAGE STYLES*/
-.contactContent {
+  /*INDEX CONTENT*/
+  .indexContent {
     display: grid;
-    grid-template-columns: 1fr 50%;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
-    text-align: left !important;
-    line-height: 2rem;
-    margin-top: 12px;
   }
   
-  .contactContent h2 {
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 18px;
+  .indexContent p {
+    text-align: left;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    padding: 8px;
   }
   
-  .contactContent img {
-    width: 350px;
+  .indexContent img {
+    width: 100%;
+    max-height: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 26px;
+    padding: 8px;
+  }
+  
+  .indexContent button {
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    font-size: var(--paragraph-font);
+    border: 0;
+    display: block;
+    margin: 0 auto;
+    border-radius: 26px;
+    padding: 8px 16px;
+    float: left;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px 0 rgba(170, 136, 136, 0.5);
+  }
+  
+  .indexContent input {
+    padding: 8px;
+    margin: 2px;
+  }
+
+  .index moto2{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  /*HEADER AND NAVBAR SECTION*/
+ .aboutHeader {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: center;
+    background-color: var(--nav-background-color);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 22px;
+    grid-gap: 20px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+  }
+  
+  .logo {
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 150px;
     height: auto;
   }
   
-  .contactContent label,
-  input[type="text"],
-  input[type="email"],
-  textarea,
-  select {
-    padding: 6px;
-    width: 90%;
-    font-weight: bold;
-  }
-  
-  .radio-group {
-    display: block;
-    gap: 5px;
-    align-items: left;
-  }
-  
-  
-  .radio-group input[type="radio"] {
+  .aboutNavbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: auto;
+    padding: 0px;
     margin: 0;
-    padding: 2px;
-    appearance: none;
-    border: 1px solid #3498db;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    cursor: pointer;
+    background-color: var(--nav-hover-link-color);
+    border: 1px solid black;
   }
   
-  .radio-group label {
-    font-size: 16px;
-    color: #333;
+  .aboutNavbar a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 16px 32px;
+    margin: 0;
+    border-right: 1px solid black;
   }
   
-  .radio-group input[type="radio"]:checked {
-    background-color: #3498db;
+  .aboutNavbar a:last-child {
+    border-right: none;
   }
   
-  
-  .contactContentbutton, .newsletterbutton {
-    background-color: #000080;
-    color: #fff;
-    padding: 14px 22px;
-    border: none;
-    border-radius: 8px;
-    margin: 0 auto;
-    width: 90%;
-    cursor: pointer;
+  .aboutNavbar a:hover {
+    background-color: var(--accent1-color);
+    color: var(--nav-link-color);
   }
   
-  .newsletterbutton {
-    background-color: var(--accent2-color) !
-  
+
